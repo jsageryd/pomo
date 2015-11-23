@@ -1,13 +1,13 @@
-# Pomo
-Pomo is a tiny script that is to be run in a loop, showing whether in focus or
+# Pomr
+Pomr is a tiny script that is to be run in a loop, showing whether in focus or
 break and how many minutes are left in the current block; inspired by [Pomodoro
 Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) and
-[Teamodoro](http://teamodoro.com/). Pomo exits 0 if in focus, 1 if in break.
+[Teamodoro](http://teamodoro.com/). Pomr exits 0 if in focus, 1 if in break.
 
 # Usage examples
 ## Simple
 ```
-$ while true; do clear; ./pomo.rb; sleep 10; done
+$ while true; do clear; ./pomr.rb; sleep 10; done
 ```
 
 ## Fancy
@@ -15,7 +15,7 @@ This example uses [Figlet](http://www.figlet.org/) and
 [Colour](https://github.com/jsageryd/colour).
 
 ```
-$ while true; do clear; pomo | figlet -f small | (pomo >/dev/null && colour red || colour green); sleep 10; done
+$ while true; do clear; pomr | figlet -f small | (pomr >/dev/null && colour red || colour green); sleep 10; done
 ```
 
 # Licence
